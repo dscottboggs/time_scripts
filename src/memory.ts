@@ -10,15 +10,15 @@ interface MemInfo {
   available: string, // human readable available memory (ignores cache usage)
   percent: number, // the percent available
 }
-const print = (text) => console.log(
-  text.full_text + '\n' + text.short_text + '\n' + text.color + '\n'
-);
+const print = (text) => console.log('[', JSON.stringify(text), '],');
+//   text.full_text + '\n' + text.short_text + '\n' + text.color + '\n'
+// );
 
 function percentSymbol(disp: boolean){
   return disp? "%" : "";
 }
 function percentOutput(value: number, max: number, free: boolean) {
-  return numericOutput(max / value * 100, 100, free, true);
+  return numericOutput(value / max * 100, 100, free, true);
 }
 function showMax(percent: boolean, max: number){
   /*  wow that looks like a bunch of nonsense. If percent is true, sends back

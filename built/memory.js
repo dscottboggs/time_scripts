@@ -2,12 +2,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var info = require("systeminformation");
 ;
-var print = function (text) { return console.log(text.full_text + '\n' + text.short_text + '\n' + text.color + '\n'); };
+var print = function (text) { return console.log('[', JSON.stringify(text), '],'); };
+//   text.full_text + '\n' + text.short_text + '\n' + text.color + '\n'
+// );
 function percentSymbol(disp) {
     return disp ? "%" : "";
 }
 function percentOutput(value, max, free) {
-    return numericOutput(max / value * 100, 100, free, true);
+    return numericOutput(value / max * 100, 100, free, true);
 }
 function showMax(percent, max) {
     /*  wow that looks like a bunch of nonsense. If percent is true, sends back
