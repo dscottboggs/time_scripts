@@ -1,4 +1,11 @@
-import MemInfo from './memory';
+import {
+  memoryPercentFree,
+  memoryFreeOutOfMax,
+  memoryPercentUsed,
+  memoryUsedOutOfMax
+} from './memory';
 
-const mem = new MemInfo();
-mem.memoryPercentFree()
+memoryPercentFree();
+memoryFreeOutOfMax();
+memoryPercentUsed();
+memoryUsedOutOfMax();

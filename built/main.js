@@ -1,4 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var memory_1 = require("./memory");
-console.log(memory_1.default());
+memory_1.memoryPercentFree();
+memory_1.memoryFreeOutOfMax();
+memory_1.memoryPercentUsed();
+memory_1.memoryUsedOutOfMax();
