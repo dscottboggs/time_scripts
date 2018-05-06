@@ -1,0 +1,29 @@
+{
+  "name": "time_scripts",
+  "version": "0.0.1",
+  "description": "Some scripts I want to time and a script to time the scripts.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^4.0.2",
+    "systeminformation": "^3.40.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.7.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dscottboggs/time_scripts.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dscottboggs/time_scripts/issues"
+  },
+  "homepage": "https://github.com/dscottboggs/time_scripts#readme"
+}
